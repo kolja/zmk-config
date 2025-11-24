@@ -11,12 +11,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+        BASE {
 
             display-name = "Base";
             bindings = <
@@ -28,11 +23,6 @@
         };
 
         NUM {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             display-name = "Num";
             bindings = <
@@ -44,11 +34,6 @@
         };
 
         NAV {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             display-name = "Nav";
             bindings = <
@@ -59,10 +44,15 @@
             >;
         };
 
-        extra_1 { status = "reserved"; };
+        EXTRA {
 
-        extra_2 { status = "reserved"; };
-
-        extra_3 { status = "reserved"; };
+            display-name = "Extra";
+            bindings = <
+&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR      &kp PRCNT    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans   &kp BSPC
+&trans   &trans    &trans  &trans    &trans        &trans       &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp TAB  &trans
+&trans   &trans    &trans  &trans    &trans        &trans       &trans              &trans              &trans            &trans               &trans   &trans
+                           &kp LGUI  &kp LEFT_ALT  &trans       &trans              &trans              &trans
+            >;
+        };
     };
 };
