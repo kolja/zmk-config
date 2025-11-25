@@ -9,16 +9,31 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        HomeRowMod: HomeRowMod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROWMOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
+            hold-trigger-on-release;
+            quick-tap-ms = <60>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         BASE {
             display-name = "Base";
             bindings = <
-&kp TAB     &kp Q  &kp W        &kp F       &kp P         &kp B    &kp J  &kp L      &kp U            &kp Y        &kp SEMI  &kp BSPC
-&kp ESCAPE  &kp A  &mt R LCTRL  &mt S LCMD  &kp T         &kp G    &kp M  &kp N      &mt E RCMD       &mt I RCTRL  &kp O     &kp ENTER
-&kp TILDE   &kp Z  &kp X        &kp C       &kp D         &kp V    &kp K  &kp H      &kp COMMA        &kp DOT      &kp FSLH  &kp COLON
-                                &kp LGUI    &kp LEFT_ALT  &mo 2    &mo 1  &kp SPACE  &kp RIGHT_SHIFT
+&kp TAB     &kp Q  &kp W                &kp F               &kp P         &kp B    &kp J  &kp L      &kp U               &kp Y                &kp SEMI  &kp BSPC
+&kp ESCAPE  &kp A  &HomeRowMod R LCTRL  &HomeRowMod S LCMD  &kp T         &kp G    &kp M  &kp N      &HomeRowMod E RCMD  &HomeRowMod I RCTRL  &kp O     &kp ENTER
+&kp TILDE   &kp Z  &kp X                &kp C               &kp D         &kp V    &kp K  &kp H      &kp COMMA           &kp DOT              &kp FSLH  &kp COLON
+                                        &kp LGUI            &kp LEFT_ALT  &mo 2    &mo 1  &kp SPACE  &kp RIGHT_SHIFT
             >;
         };
 
