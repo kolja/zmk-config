@@ -30,10 +30,10 @@
         BASE {
             display-name = "Base";
             bindings = <
-&kp TAB     &kp Q  &kp W                &kp F               &kp P         &kp B    &kp J  &kp L      &kp U               &kp Y                &kp SEMI  &kp BSPC
-&kp ESCAPE  &kp A  &HomeRowMod LCTRL R  &HomeRowMod LCMD S  &kp T         &kp G    &kp M  &kp N      &HomeRowMod RCMD E  &HomeRowMod RCTRL I  &kp O     &kp ENTER
-&kp TILDE   &kp Z  &kp X                &kp C               &kp D         &kp V    &kp K  &kp H      &kp COMMA           &kp DOT              &kp FSLH  &kp COLON
-                                        &kp LGUI            &kp LEFT_ALT  &mo 2    &mo 1  &kp SPACE  &kp RIGHT_SHIFT
+&kp TAB     &kp Q  &kp W                &kp F               &kp P           &kp B    &kp J  &kp L            &kp U               &kp Y                &kp SEMI  &kp BSPC
+&kp ESCAPE  &kp A  &HomeRowMod LCTRL R  &HomeRowMod LCMD S  &mt LEFT_ALT T  &kp G    &kp M  &mt RIGHT_ALT N  &HomeRowMod RCMD E  &HomeRowMod RCTRL I  &kp O     &kp ENTER
+&kp TILDE   &kp Z  &kp X                &kp C               &kp D           &kp V    &kp K  &kp H            &kp COMMA           &kp DOT              &kp FSLH  &kp COLON
+                                        &kp LEFT_SHIFT      &kp TAB         &mo 2    &mo 1  &kp SPACE        &kp RIGHT_SHIFT
             >;
         };
 
@@ -43,27 +43,27 @@
 &kp TAB  &kp CARET          &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &kp BSPC
 &trans   &kp DOUBLE_QUOTES  &kp SQT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL     &trans
 &trans   &kp GRAVE          &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS         &kp N0     &kp N1  &kp N2  &kp N3  &kp SLASH     &trans
-                                         &kp LGUI              &kp LEFT_ALT           &trans           &trans     &trans  &trans
+                                         &trans                &trans                 &trans           &trans     &trans  &trans
             >;
         };
 
         NAV {
             display-name = "Nav";
             bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR      &kp PRCNT    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans   &kp BSPC
-&trans   &trans    &trans  &trans    &trans        &trans       &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp TAB  &trans
-&trans   &trans    &trans  &trans    &trans        &trans       &trans              &trans              &trans            &trans               &trans   &trans
-                           &kp LGUI  &kp LEFT_ALT  &trans       &trans              &trans              &trans
+&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans   &kp BSPC
+&trans   &trans    &trans  &trans    &trans    &trans       &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp TAB  &trans
+&trans   &trans    &trans  &trans    &trans    &trans       &trans              &trans              &trans            &trans               &trans   &trans
+                           &trans    &trans    &trans       &trans              &trans              &trans
             >;
         };
 
         EXTRA {
             display-name = "Extra";
             bindings = <
-&kp TAB  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans   &kp BSPC
-&trans   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp TAB  &trans
-&trans   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &trans              &trans              &trans            &trans               &trans   &trans
-                                     &kp LGUI      &kp LEFT_ALT  &trans            &trans              &trans              &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans   &kp BSPC
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp TAB  &trans
+&trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &trans              &trans              &trans            &trans               &trans   &trans
+                                    &trans        &trans        &trans            &trans              &trans              &trans
             >;
         };
     };
