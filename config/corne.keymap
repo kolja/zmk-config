@@ -40,29 +40,29 @@
         NUM {
             display-name = "Num";
             bindings = <
-&to 4   &kp CARET          &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &kp BSPC
-&trans  &kp DOUBLE_QUOTES  &kp SQT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL     &trans
-&trans  &kp GRAVE          &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS         &kp N0     &kp N1  &kp N2  &kp N3  &kp SLASH     &trans
-                                        &trans                &trans                 &trans           &trans     &trans  &trans
+&kp EXCLAMATION  &kp CARET          &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &kp BSPC
+&trans           &kp DOUBLE_QUOTES  &kp SQT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL     &trans
+&trans           &kp GRAVE          &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS         &kp N0     &kp N1  &kp N2  &kp N3  &kp SLASH     &trans
+                                                 &trans                &trans                 &trans           &trans     &trans  &trans
             >;
         };
 
         NAV {
             display-name = "Nav";
             bindings = <
-&to 4   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &kp BSPC
-&trans  &trans    &trans  &trans    &trans    &trans       &kp LA(F1)          &kp LA(F2)          &kp LA(F3)        &kp LA(F4)           &kp LA(F5)   &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &kp LA(F6)          &kp LA(F7)          &kp LA(F8)        &kp LA(F9)           &kp LA(F10)  &trans
-                          &trans    &trans    &trans       &trans              &trans              &trans
+&kp EXCLAMATION  &kp CARET  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans  &kp BSPC
+&trans           &trans     &trans  &trans    &trans    &trans       &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &trans  &trans
+&trans           &trans     &trans  &trans    &trans    &trans       &trans              &trans              &trans            &trans               &trans  &trans
+                                    &trans    &trans    &trans       &trans              &trans              &trans
             >;
         };
 
         EXTRA {
             display-name = "Extra";
             bindings = <
-&to 4   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans   &kp BSPC
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp TAB  &trans
-&trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &trans              &trans              &trans            &trans               &trans   &trans
+&to 4   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &kp BSPC
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp LA(F1)          &kp LA(F2)          &kp LA(F3)        &kp LA(F4)           &kp LA(F5)   &trans
+&trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &kp LA(F6)          &kp LA(F7)          &kp LA(F8)        &kp LA(F9)           &kp LA(F10)  &trans
                                     &trans        &trans        &trans            &trans              &trans              &trans
             >;
         };
