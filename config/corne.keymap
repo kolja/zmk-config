@@ -50,9 +50,9 @@
         NAV {
             display-name = "Nav";
             bindings = <
-&to 4   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans   &kp BSPC
-&trans  &trans    &trans  &trans    &trans    &trans       &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp TAB  &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &trans              &trans              &trans            &trans               &trans   &trans
+&to 4   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &kp BSPC
+&trans  &trans    &trans  &trans    &trans    &trans       &kp LA(F1)          &kp LA(F2)          &kp LA(F3)        &kp LA(F4)           &kp LA(F5)   &trans
+&trans  &trans    &trans  &trans    &trans    &trans       &kp LA(F6)          &kp LA(F7)          &kp LA(F8)        &kp LA(F9)           &kp LA(F10)  &trans
                           &trans    &trans    &trans       &trans              &trans              &trans
             >;
         };
