@@ -30,10 +30,10 @@
         BASE {
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W                &kp F               &kp P           &kp B    &kp J  &kp L            &kp U               &kp Y                &kp SEMI  &kp BSPC
-&kp ESCAPE  &kp A  &HomeRowMod LCTRL R  &HomeRowMod LCMD S  &mt LEFT_ALT T  &kp G    &kp M  &mt RIGHT_ALT N  &HomeRowMod RCMD E  &HomeRowMod RCTRL I  &kp O     &kp ENTER
-&kp TILDE   &kp Z  &kp X                &kp C               &kp D           &kp V    &kp K  &kp H            &kp COMMA           &kp DOT              &kp FSLH  &kp COLON
-                                        &kp LEFT_SHIFT      &kp TAB         &mo 2    &mo 1  &kp SPACE        &kp RIGHT_SHIFT
+&kp ESCAPE  &kp Q  &kp W        &kp F           &kp P           &kp B    &kp J  &kp L            &kp U            &kp Y        &kp SEMI  &kp BSPC
+&kp ESCAPE  &kp A  &mt LCTRL R  &mt LCMD S      &mt LEFT_ALT T  &kp G    &kp M  &mt RIGHT_ALT N  &mt RCMD E       &mt RCTRL I  &kp O     &kp ENTER
+&kp TILDE   &kp Z  &kp X        &kp C           &kp D           &kp V    &kp K  &kp H            &kp COMMA        &kp DOT      &kp FSLH  &kp COLON
+                                &kp LEFT_SHIFT  &kp TAB         &mo 2    &mo 1  &kp SPACE        &kp RIGHT_SHIFT
             >;
         };
 
