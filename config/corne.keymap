@@ -39,7 +39,7 @@
             display-name = "Num";
             bindings = <
 &kp EXCLAMATION  &kp CARET          &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &kp BSPC
-&trans           &kp DOUBLE_QUOTES  &kp SQT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL     &trans
+&trans           &kp DOUBLE_QUOTES  &kp SQT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL     &kp PERIOD
 &trans           &kp GRAVE          &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS         &kp N0     &kp N1  &kp N2  &kp N3  &kp SLASH     &kp UNDERSCORE
                                                  &trans                &trans                 &trans           &trans     &trans  &trans
             >;
