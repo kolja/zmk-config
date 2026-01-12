@@ -15,6 +15,7 @@
             label = "MY_MODTAP";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
+
             tapping-term-ms = <200>;
             quick-tap-ms = <80>;
             flavor = "tap-preferred";
@@ -27,10 +28,10 @@
         BASE {
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W        &kp F           &kp P           &kp B    &kp J  &kp L            &kp U            &kp Y        &kp SEMI  &kp BSPC
-&kp ESCAPE  &kp A  &MyMT LCTRL R  &MyMT LCMD S      &MyMT LEFT_ALT T  &kp G    &kp M  &MyMT RIGHT_ALT N  &MyMT RCMD E       &MyMT RCTRL I  &kp O     &kp ENTER
-&kp TILDE   &kp Z  &kp X        &kp C           &kp D           &kp V    &kp K  &kp H            &kp COMMA        &kp DOT      &kp FSLH  &kp COLON
-                                &kp LEFT_SHIFT  &kp TAB         &mo 2    &mo 1  &kp SPACE        &kp RIGHT_SHIFT
+&kp ESCAPE  &kp Q  &kp W          &kp F           &kp P             &kp B    &kp J  &kp L              &kp U            &kp Y          &kp SEMI  &kp BSPC
+&kp ESCAPE  &kp A  &MyMT LCTRL R  &MyMT LCMD S    &MyMT LEFT_ALT T  &kp G    &kp M  &MyMT RIGHT_ALT N  &MyMT RCMD E     &MyMT RCTRL I  &kp O     &kp ENTER
+&kp TILDE   &kp Z  &kp X          &kp C           &kp D             &kp V    &kp K  &kp H              &kp COMMA        &kp DOT        &kp FSLH  &kp COLON
+                                  &kp LEFT_SHIFT  &kp TAB           &mo 2    &mo 1  &kp SPACE          &kp RIGHT_SHIFT
             >;
         };
 
@@ -39,7 +40,7 @@
             bindings = <
 &kp EXCLAMATION  &kp CARET          &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &kp BSPC
 &trans           &kp DOUBLE_QUOTES  &kp SQT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL     &trans
-&trans           &kp GRAVE          &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS         &kp N0     &kp N1  &kp N2  &kp N3  &kp SLASH     &trans
+&trans           &kp GRAVE          &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS         &kp N0     &kp N1  &kp N2  &kp N3  &kp SLASH     &kp UNDERSCORE
                                                  &trans                &trans                 &trans           &trans     &trans  &trans
             >;
         };
@@ -57,9 +58,9 @@
         EXTRA {
             display-name = "Extra";
             bindings = <
-&to 4   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &kp BSPC
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp LC(LS(H))         &kp LC(LS(J))          &kp LC(LS(K))       &kp LC(LS(L))        &trans   &trans
-&trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &kp LC(LA(H))         &kp LC(LA(J))          &kp LC(LA(K))       &kp LC(LA(L))        &trans   &trans
+&to 4   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &trans  &kp BSPC
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp LC(LS(H))       &kp LC(LS(J))       &kp LC(LS(K))     &kp LC(LS(L))        &trans  &trans
+&trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &kp LC(LA(H))       &kp LC(LA(J))       &kp LC(LA(K))     &kp LC(LA(L))        &trans  &trans
                                     &trans        &trans        &trans            &trans              &trans              &trans
             >;
         };
